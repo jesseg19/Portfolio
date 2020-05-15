@@ -126,14 +126,19 @@
     <h2 class="heading">Get in Touch</h2>
     <h3 class="contact-sub">Shoot me a message via the form below</h3>
     <div class="contact-form-cont">
-      <form class="contact-form" method="post" data-netlify="true">
+      <form class="contact-form" method="post" data-netlify="true" netlify-honeypot="bot-field">
         <p>Full Name*</p>
         <input class="name input" type="text" name="name" id="name" required />
         <p>Email address*</p>
         <input class="input" type="email" name="email" id="email" required />
         <p>Message*</p>
         <textarea required class="input" name="message" id="comments" cols="90" rows="10"></textarea>
-        <div data-netlify-recaptcha="true"></div>
+        <div hidden aria-hidden="true">
+          <label>
+            Don’t fill this out if you're human:
+            <input name="bot-field" />
+          </label>
+        </div>
         <input type="submit" id="contact-btn" value="Send">
       </form>
     </div>
