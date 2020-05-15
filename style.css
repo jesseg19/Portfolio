@@ -94,12 +94,10 @@ padding: 0 2rem;
 }
 .services-icons {
   width: 17vw;
-  padding: 0 0rem;
 }
 .icons-cont {
   display: inline-flex;
-  padding-bottom: 7rem;
-  padding-top: 4rem;
+  padding: 4rem 2rem 7rem 0;
 }
 /*---about---*/
 #about {
@@ -360,8 +358,13 @@ color: var(--secondary-colour);
     margin-top: 13vw;
   }
   .services-icons {
-    padding: 0 4rem;
     width: 13vw;
+  }
+  .icons-cont {
+    padding: 4rem 0 7rem 0;
+  }
+  .services-p{
+    width: 25rem;
   }
 }
 
